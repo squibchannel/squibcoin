@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>squibcoin</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta
+      name="description"
+      content="Squibcoin isn't real, just a joke! If you want to waste money, here's a fun page to buy Squib a beer."
+    />
+    <meta
+      name="keywords"
+      content="squibcoin, joke, fun page, buy me a beer, web development"
+    />
+    <meta name="author" content="Squib Channel" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      .message {
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+        animation: zoomInFly 5s ease-out forwards;
+      }
+
+      .subtext {
+        font-size: 18px;
+        margin-top: 20px;
+        opacity: 0;
+        animation: fadeInSubtext 2s 5s forwards;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      @keyframes zoomInFly {
+        0% {
+          transform: scale(0.5) translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1) translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInSubtext {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">It was a joke, squibcoin isn't real!</div>
+    <div class="subtext">
+      If you feel like wasting money, feel free to
+      <a href="https://buymeacoffee.com/squib_channel" target="_blank"
+        >buy me a beer</a
+      >
+    </div>
+  </body>
+</html>
